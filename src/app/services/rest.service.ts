@@ -8,7 +8,8 @@ import {UserService} from "./user.service";
 @Injectable()
 export class RestService {
 
-    constructor(private http: Http, private translate: TranslateService, private userService: UserService) {
+    constructor(private http: Http, private translate: TranslateService, 
+                private userService: UserService) {
     }
 
     private resolve(path: string): string {
