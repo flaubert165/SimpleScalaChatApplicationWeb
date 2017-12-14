@@ -58,13 +58,13 @@ export class ChatComponent implements OnInit, OnDestroy {
     this.lastSeenSubscription.unsubscribe();
   }
 
-  //private send(type: ChatDataType, data: string): void {
-    //let chatData = {
-      //type: type,
-      //data: data,
-      //operator: true,
-      //interactionTime: null
-    //};
+  /*private send(type: ChatDataType, data: string): void {
+    let chatData = {
+      type: type,
+      data: data,
+      operator: true,
+      interactionTime: null
+    };
 
     //this.source.data.push(Object.assign(chatData,{
       //read: false
@@ -87,5 +87,5 @@ export class ChatComponent implements OnInit, OnDestroy {
 
   public doPrint(): void {
     this.print.emit();
-  }
+  }*/
 }

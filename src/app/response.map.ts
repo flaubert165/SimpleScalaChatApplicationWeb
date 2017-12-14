@@ -36,7 +36,7 @@ export class ResponseMap<T> {
               this._blocker.value = false;
             }
 
-            return response.text() != '' ? response.json() : null;
+            return response.text() !== '' ? response.json() : null;
         }).catch((response: Response | Error): Observable<any> => {
             if (response instanceof Response) {
               let data = response.json();

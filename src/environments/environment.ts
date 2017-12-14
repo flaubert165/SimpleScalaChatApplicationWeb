@@ -5,5 +5,11 @@
 
 export const environment = {
   production: false,
-  serverUrl: "http://locahost:9000"
+  serverUrl: "http://locahost:9000",
+  mqtt: {
+    hostname: 'localhost',
+    port: 15675,
+    path : '/ws',
+    protocol: 'ws'
+  }
 };
